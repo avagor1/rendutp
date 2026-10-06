@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusLink - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <h1>CampusLink</h1>
+    <p>Gestion des équipements, salles et incidents du campus.</p>
+    </header>
+    <main id="contenu">
+      <div class="page-head">
+        <div><h2>Tableau de bord</h2></div>
+      </div>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html" aria-current="page">Accueil</a></li>
+            <li><a href="equipements.html">Équipements</a></li>
+            <li><a href="salles.html">Salles</a></li>
+            <li><a href="incidents.html">Incidents</a></li>
+            <li><a href="incident-detail.html">Détail d'un incident</a></li>
+        </ul>
+    </nav>
+      <section class="section" aria-labelledby="t-chiffres">
+        <h3 id="t-chiffres">Chiffres clés</h3>
+        <ul class="grid grid-4">
+          <li class="card"><dl class="stat"><dd>12</dd><dt>Incidents ouverts</dt></dl></li>
+          <li class="card"><dl class="stat"><dd>3</dd><dt>Incidents critiques</dt></dl></li>
+          <li class="card"><dl class="stat"><dd>5</dd><dt>Équipements hors service</dt></dl></li>
+          <li class="card"><dl class="stat"><dd>9</dd><dt>Résolus cette semaine</dt></dl></li>
+        </ul>
+      </section>
+
+      <div class="deux-colonnes">
+        <section class="section card" aria-labelledby="t-urgents">
+          <h3 id="t-urgents">Incidents prioritaires</h3>
+          <ul class="liste">
+            <li><a href="incident-detail.html">Projecteur HS en 409</a> <span class="badge badge-crit">Critique</span></li>
+            <li><a href="incident-detail.html">Fuite au plafond, couloir 5</a> <span class="badge badge-crit">Critique</span></li>
+            <li><a href="incident-detail.html">Prises défectueuses au Souk</a> <span class="badge badge-warn">Moyen</span></li>
+          </ul>
+          <p><a href="incidents.html">Voir tous les incidents</a></p>
+        </section>
+
+        <section class="section card" aria-labelledby="t-salles">
+          <h3 id="t-salles">Salles concernées</h3>
+          <ul class="liste">
+            <li><a href="salles.html">204</a> <span class="badge badge-crit">Indisponible</span></li>
+            <li><a href="salles.html">Couloir 5ème étage</a> <span class="badge badge-warn">Accès limité</span></li>
+            <li><a href="salles.html">110</a> <span class="badge badge-warn">Partielle</span></li>
+          </ul>
+        </section>
+      </div>
+      <p><a class="lien-bouton" href="declarer-incident.html">Déclarer un incident</a></p>
+    </main>
+    <footer>
+        <p>&copy; CampusLink-Ynov 2026</p>
+    </footer>
+</body>
+</html>

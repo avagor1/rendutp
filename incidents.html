@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusLink - Incidents</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <h1>CampusLink</h1>
+    <p>Gestion des équipements, salles et incidents du campus.</p>
+    </header>
+    <main id="contenu">
+      <div class="page-head">
+        <div><h2>Incidents</h2></div>
+      </div>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="equipements.html">Équipements</a></li>
+            <li><a href="salles.html">Salles</a></li>
+            <li><a href="incidents.html" aria-current="page">Incidents</a></li>
+            <li><a href="incident-detail.html">Détail d'un incident</a></li>
+        </ul>
+    </nav>
+      <p><a class="lien-bouton" href="declarer-incident.html">Déclarer un incident</a></p>
+      <div class="table-wrap" role="region" aria-labelledby="cap-inc" tabindex="0">
+        <table>
+          <caption id="cap-inc">Liste des incidents</caption>
+          <thead><tr><th scope="col">Réf.</th><th scope="col">Titre</th><th scope="col">Lieu</th><th scope="col">Gravité</th><th scope="col">Statut</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">INC-042</th><td><a href="incident-detail.html">Projecteur HS</a></td><td>409</td><td><span class="badge badge-crit">Critique</span></td><td>En cours</td></tr>
+            <tr><th scope="row">INC-041</th><td><a href="incident-detail.html">Fuite au plafond</a></td><td>Couloir 5ème étage</td><td><span class="badge badge-crit">Critique</span></td><td>Ouvert</td></tr>
+            <tr><th scope="row">INC-039</th><td><a href="incident-detail.html">Prises défectueuses</a></td><td>Souk</td><td><span class="badge badge-warn">Moyen</span></td><td>Ouvert</td></tr>
+            <tr><th scope="row">INC-037</th><td><a href="incident-detail.html">Projecteur HS</a></td><td>503</td><td><span class="badge badge-info">Faible</span></td><td>Résolu</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+        <p>&copy; CampusLink-Ynov 2026</p>
+    </footer>
+</body>
+</html>

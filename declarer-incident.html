@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusLink - Déclarer un incident</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <h1>CampusLink</h1>
+    <p>Gestion des équipements, salles et incidents du campus.</p>
+    </header>
+    <main id="contenu">
+      <div class="page-head">
+        <div><h2>Déclarer un incident</h2></div>
+      </div>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="equipements.html">Équipements</a></li>
+            <li><a href="salles.html">Salles</a></li>
+            <li><a href="incidents.html">Incidents</a></li>
+            <li><a href="incident-detail.html">Détail d'un incident</a></li>
+        </ul>
+    </nav>
+      <p>Les champs marqués d'une étoile (*) sont obligatoires.</p>
+      <form class="card" action="incidents.html" method="get">
+        <div class="champ">
+          <label for="titre">Titre *</label>
+          <input id="titre" name="titre" type="text" required placeholder="Ex. : Projecteur qui ne s'allume plus">
+        </div>
+        <div class="champ">
+          <label for="salle">Salle *</label>
+          <select id="salle" name="salle" required>
+          <option value="">Choisir une salle</option>
+<option>Amphi Bleu</option>
+<option>101</option>
+<option>102</option>
+<option>103</option>
+<option>104</option>
+<option>105</option>
+<option>106</option>
+<option>107</option>
+<option>108</option>
+<option>109</option>
+<option>110</option>
+<option>111</option>
+<option>112</option>
+<option>113</option>
+<option>114</option>
+<option>115</option>
+<option>116</option>
+<option>117</option>
+<option>118</option>
+<option>119</option>
+<option>120</option>
+<option>201</option>
+<option>202</option>
+<option>203</option>
+<option>204</option>
+<option>205</option>
+<option>206</option>
+<option>207</option>
+<option>208</option>
+<option>209</option>
+<option>210</option>
+<option>211</option>
+<option>212</option>
+<option>213</option>
+<option>214</option>
+<option>215</option>
+<option>216</option>
+<option>217</option>
+<option>218</option>
+<option>219</option>
+<option>220</option>
+<option>Souk</option>
+<option>301</option>
+<option>302</option>
+<option>303</option>
+<option>304</option>
+<option>305</option>
+<option>306</option>
+<option>307</option>
+<option>308</option>
+<option>309</option>
+<option>310</option>
+<option>311</option>
+<option>312</option>
+<option>313</option>
+<option>314</option>
+<option>315</option>
+<option>316</option>
+<option>317</option>
+<option>318</option>
+<option>319</option>
+<option>320</option>
+<option>401</option>
+<option>402</option>
+<option>403</option>
+<option>404</option>
+<option>405</option>
+<option>406</option>
+<option>407</option>
+<option>408</option>
+<option>409</option>
+<option>410</option>
+<option>411</option>
+<option>412</option>
+<option>413</option>
+<option>414</option>
+<option>415</option>
+<option>416</option>
+<option>417</option>
+<option>418</option>
+<option>419</option>
+<option>420</option>
+<option>501</option>
+<option>502</option>
+<option>503</option>
+<option>504</option>
+<option>505</option>
+<option>506</option>
+<option>507</option>
+<option>508</option>
+<option>509</option>
+<option>510</option>
+<option>511</option>
+<option>512</option>
+<option>513</option>
+<option>514</option>
+<option>515</option>
+<option>516</option>
+<option>517</option>
+<option>518</option>
+<option>519</option>
+<option>520</option>
+<option>601</option>
+<option>602</option>
+<option>603</option>
+<option>604</option>
+<option>605</option>
+<option>606</option>
+<option>607</option>
+<option>608</option>
+<option>609</option>
+<option>610</option>
+<option>611</option>
+<option>612</option>
+<option>613</option>
+<option>614</option>
+<option>615</option>
+<option>616</option>
+<option>617</option>
+<option>618</option>
+<option>619</option>
+<option>620</option>
+            
+          </select>
+        </div>
+        <div class="champ">
+          <label for="equipement">Équipement concerné</label>
+          <select id="equipement" name="equipement">
+            <option value="">Aucun / ne sait pas</option>
+            <option>Vidéoprojecteur</option><option>Poste enseignant</option>
+            <option>Prises électriques</option><option>Micro sans fil</option>
+          </select>
+        </div>
+        <fieldset>
+          <legend>Gravité *</legend>
+          <label class="choix"><input type="radio" name="gravite" value="faible" required> Faible : gêne légère</label>
+          <label class="choix"><input type="radio" name="gravite" value="moyen"> Moyenne : usage dégradé</label>
+          <label class="choix"><input type="radio" name="gravite" value="critique"> Critique : salle inutilisable</label>
+        </fieldset>
+        <div class="champ">
+          <label for="description">Description *</label>
+          <textarea id="description" name="description" rows="5" required aria-describedby="aide-desc"></textarea>
+          <span id="aide-desc" class="aide">Décrivez ce qui s'est passé et depuis quand.</span>
+        </div>
+        <div class="champ">
+          <label for="email">Votre e-mail *</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div><button type="submit">Envoyer le signalement</button></div>
+      </form>
+    </main>
+    <footer>
+        <p>&copy; CampusLink-Ynov 2026</p>
+    </footer>
+</body>
+</html>

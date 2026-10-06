@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusLink - Détail d'un incident</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <h1>CampusLink</h1>
+    <p>Gestion des équipements, salles et incidents du campus.</p>
+    </header>
+    <main id="contenu">
+      <div class="page-head">
+        <div><h2>Détail d'un incident</h2></div>
+      </div>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="equipements.html">Équipements</a></li>
+            <li><a href="salles.html">Salles</a></li>
+            <li><a href="incidents.html">Incidents</a></li>
+            <li><a href="incident-detail.html" aria-current="page">Détail d'un incident</a></li>
+        </ul>
+    </nav>
+      <p><a class="lien-bouton" href="declarer-incident.html">Déclarer un incident</a></p>
+      <div class="deux-colonnes">
+        <article class="card section">
+          <h3>INC-042 : Projecteur HS <span class="badge badge-crit">Critique</span></h3>
+          <p>Le vidéoprojecteur de la salle 409 ne s'allume plus. Le voyant clignote en rouge depuis lundi matin, et deux cours ont dû être déplacés.</p>
+          <h3>Historique</h3>
+          <ol class="timeline">
+            <li><time datetime="2026-09-28T08:40">28/09/2026, 08h40</time>Incident déclaré par un enseignant.</li>
+            <li><time datetime="2026-09-29T10:15">29/09/2026, 10h15</time>Prise en charge par le service technique.</li>
+            <li><time datetime="2026-10-01T14:00">01/10/2026, 14h00</time>Pièce de remplacement commandée.</li>
+          </ol>
+        </article>
+        <aside class="card section" aria-labelledby="t-infos">
+          <h3 id="t-infos">Informations</h3>
+          <dl class="meta">
+            <dt>Lieu</dt><dd><a href="salles.html">Salle 409</a></dd>
+            <dt>Équipement</dt><dd><a href="equipements.html">Vidéoprojecteur</a></dd>
+            <dt>Statut</dt><dd>En cours</dd>
+            <dt>Déclaré par</dt><dd>M. Martin</dd>
+          </dl>
+          <p></p>
+          <a href="incidents.html">Retour à la liste des incidents</a>
+        </aside>
+      </div>
+    </main>
+    <footer>
+        <p>&copy; CampusLink-Ynov 2026</p>
+    </footer>
+</body>
+</html>
